@@ -10,7 +10,7 @@
 Команда  
 ```dumbproxy -passwd /etc/dumbproxy.htpasswd 'USERNAME' 'PASSWORD'```  
 добавит в _/etc/dumbproxy.htpasswd_  строку с логином и хешированным паролем.  
-## Конфигурациф dumbproxy.
+## Конфигурация dumbproxy.
 Создайте файл _/etc/default/dumbproxy_  
 ```OPTIONS=-auth basicfile://?path=/etc/dumbproxy.htpasswd -autocert -bind-address :443```  
 Файл _/etc/systemd/system/dumbproxy.service_  
